@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: "Oswald", sans-serif;
+}
+
+.titleBests{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 220px;
+    width: 410px;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: end;
+    padding-bottom: 50px;
+}
+
+.celebsBlock{
+  display: inline-block;  
+  min-width: 200px;     
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.celebsPhoto{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: filter 0.3s ease;
+}
+
+.celebsPhoto:hover{
+   filter: brightness(70%); 
+}
+
+.nameCeleb{
+    color: #ffff;
+    font-size: 25px;
+    text-align: center;
+    transition: filter 0.8s ease;
+    text-decoration: none;
+}
+
+.nameCeleb:hover{
+    color: #9b9b9b;
+}
+
+
+.bestCelebs{
+  display: flex;       
+  gap: 32px;       
+  overflow-x: hidden;    
+  width: 1160px;
+  margin: auto;
+  scroll-behavior: smooth; 
+  margin-top: 50px;
+}
+
+.celebsWrapper {
+  position: relative;
+}
+
+.celebsArrow {
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  background: rgba(112, 112, 112, 0.6);
+  border-radius: 50%;
+  color: white;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px 21px;
+  z-index: 10;
+}
+
+.celebsArrow.left {
+  left: 6em;
+}
+
+.celebsArrow.right {
+  right: 6.2em;
+}
+
+.celebsArrow.hidden {
+  display: none;
+}
+

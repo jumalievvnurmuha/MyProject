@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: "Oswald", sans-serif;
+}
+
+header{
+    background: rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(6px);   
+    -webkit-backdrop-filter: blur(10px);  
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.containerNews{
+    height: 40px;
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    letter-spacing: 3px;
+}
+
+.newMovies{
+    color: #ff0f0f;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 4em;
+}
+
+.newPosters{
+    height: 630px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 61px;
+    margin-left: 200px;
+    align-content: end;
+}
+
+.cardMovie{
+    width: 220px;
+    height: 500px;
+    background-color: #111111;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+    transition: transform 0.2s ease;
+    margin-top: 40px;
+}
+
+
+.cardMovie img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cardMovie img:hover{
+    transform: scale(1.01);
+}
+
+
+.infoMovie {
+    padding: 12px;
+}
+
+.ratingMovie {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.nameMovie {
+    font-size: 25px;
+    margin-bottom: 12px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300px;
+}
+
+.trailerMovie {
+    display: flex;
+    gap: 60px;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.8s ease;
+}
+
+.trailerMovie:hover {
+    color: #bdbcbc;
+}
+
+.bestOf2025{
+    height: 420px;
+}
+
+.imageF1{
+    height: 300px;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+    width: 1210px;
+}
+
+.f1Img{
+    width: 450px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.f1Img:hover{
+    transform: scale(1.01);
+}
+
+.pBest{
+    font-size: 32px;
+    color: #ffffff;
+    display: flex;
+    align-items: start;
+    width: 400px;
+    padding-left: 20px;
+}
+
+.redBar {
+    width: 6px;
+    height: 40px;
+    background: #ff0f0f;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-bottom: 210px;
+}
+
+.adressS{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 50px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    transition: transform 1s ease;
+}
+
+.adressS:hover{
+    color: #ff0f0f;
+}
+
+.pDescription{
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.pTogether{
+    display: grid;
+    gap: 20px;
+    padding-bottom: 162px;
+}
+
+.pTitle{
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.titleNews{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    width: 440px;
+
+}
+
+.redBars{
+    width: 6px;
+    height: 40px;
+    background: #ff0f0f;
+    border-radius: 3px;
+}
+
+.logoNetflix{
+    width: 140px;
+    height: 140px;
+}
+
+.newsContainer{
+    display: flex;
+    width: 1239px;
+    justify-content: center;
+    height: 175px;
+    flex-wrap: wrap;
+    align-content: end;
+}
+
+.topNews{
+    margin-top: 130px;
+}
+
+.newsDescription{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    width: 737px;
+    transition: transform 1.5s ease;
+}
+
+.newsDescription:hover{
+    color: #dfdfdf;
+}
+
+
+.newsInformations{
+    height: 645px;
+}
+
+.imageNews{
+    width: 80px;
+    border-radius: 8px;
+}
+
+.descriptionNews{
+    color: #ffffff;
+    font-size: 17;
+    font-weight: 300;
+    width: 350px;
+    transition: transform 1.5s ease;   
+}
+
+.descriptionNews:hover{
+    color: #dfdfdf;
+}
+
+.containerBox{
+    display: flex;
+    width: 450px;
+    justify-content: end;
+    height: 175px;
+    flex-wrap: wrap;
+    align-content: end;
+    gap: 20px;
+}
+
+.containerBlock{
+  width: 1370px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  letter-spacing: 0.6px;
+}
+
+.ratingMovie img{
+    width: 20px;
+    height: 20px;
+}
+
+.topPicks {
+  display: flex;       
+  gap: 32px;       
+  overflow-x: hidden;    
+  width: 1160px;
+  margin: auto;
+  scroll-behavior: smooth; 
+  margin-top: 50px;
+}
+
+.cardBest {
+  display: inline-block;  
+  min-width: 200px;     
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.cardBest img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.infoBest {
+  padding: 10px;
+}
+
+.ratingBest {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.ratingBest img{
+    width: 20px;
+    height: 20px;
+}
+
+.trailerBest {
+    display: flex;
+    gap: 60px;
+    font-size: 22px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.8s ease;
+}
+
+.trailerBest:hover {
+    color: #bdbcbc;
+}
+
+.nameBest {
+    font-size: 25px;
+    margin-bottom: 12px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300px;
+}

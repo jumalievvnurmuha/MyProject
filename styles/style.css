@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.allBlock{
+    margin: 0;
+    height: 100vh;
+    background-image: url('/images/Type=LandingPage.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(5px);          
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.logoDiv{
+    width: 39vh;
+    display: flex;
+    justify-content: end;
+
+}
+
+.logoNet{
+    width: 125px;
+}
+
+.navBar{
+    width: 192vh;
+    display: flex;
+    justify-content: center;
+    gap: 86px;
+}
+
+.navBar a{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navBar a:hover {
+  color: #ff2323;
+  transform: scale(1.1);
+}
+
+main{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 99vh;
+    flex-direction: column;
+    font-family: "Oswald", sans-serif;
+}
+
+.titleNet{
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+.decriptionNet{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
